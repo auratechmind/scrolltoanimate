@@ -56,8 +56,7 @@
 
 Now, When Parent Div OR Main Div is visible on screen the element is Animated.
 
-#### Note:
-This module is tested in fresh copy of laravel 5. If you have customised your application then please change as per your application.
+
 
 ## Demo
 http://plugins.auratechmind.net/laravel-blog/public/
