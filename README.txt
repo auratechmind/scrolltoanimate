@@ -5,7 +5,10 @@ Easy Steps to use scroll to animate:
  
 1)First add Target Class (.target) in Main div OR Parent Div.
 2)To Add Animation on Element Add animated class (.animated) in that particular element
-EX:	<div class="animated"></div>
+EX:	
+<pre><code>
+<div class="animated"></div>
+</code></pre>
 3)Now, Add Effect on that element which you want to add.Different animation style are listed in animate-effects.txt file. 
 Ex:	<div class="animated" animate="bounce"></div>
 4)You Can also Set Animation Duration & Delay like below Example(OPTIONAL):
