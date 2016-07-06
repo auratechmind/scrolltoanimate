@@ -66,9 +66,6 @@ http://plugins.auratechmind.net/laravel-blog/public/
 http://auratechmind.net/question/category/laravel-blog/
 
 ## Credit
-https://opensharecount.com/
+https://daneden.github.io/animate.css/
 
-https://developers.facebook.com/
-
-http://www.findalltogether.com/tutorial/simple-blog-application-in-laravel-5/
 
