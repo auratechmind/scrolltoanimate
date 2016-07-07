@@ -1,11 +1,6 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 /* Check Which Section Visible on screen*/
 $(document).ready(function() {
-    var $animation_elements = $('.target');
+    var $animation_elements = $('.animate-box');
     var $window = $(window);    
     function check_if_in_view() {
         var window_height = $window.height();
@@ -21,20 +16,23 @@ $(document).ready(function() {
             //check to see if this current container is within viewport
             if ((element_bottom_position > window_top_position) &&
                 (element_top_position < window_bottom_position)) {
-                $element.addClass('in-view');
-                /*$(".navbar-nav li a").each(function() {
-                    if ($(this).attr("id") == $element.attr('id')) {
-                        $('.navbar-nav li a').parent().removeClass('active');
-                        $('#' + $element.attr('id')).parent().addClass('active');
-                    }
-                });*/
+                $element.addClass('in-view');                
                 var cls = ".in-view .animated";
                 $(cls).each(function() {
-                    var animationName = $(this).attr("animate");
-                    console.log(animationName);
+                    var animationName = $(this).attr("animate");                    
                     if (animationName !== undefined) {
-                        $(this).css('-webkit-animation-duration', $(this).attr("duration"));
+                        /* Chrome & Safari */
+						$(this).css('-webkit-animation-duration', $(this).attr("duration"));
+						/*Mozila*/
+						$(this).css('-moz-animation-duration', $(this).attr("duration"));
+						/*Opera*/
+						$(this).css('-o-animation-duration', $(this).attr("duration"));
+						/* Chrome & Safari */
                         $(this).css('-webkit-animation-delay', $(this).attr("delay"));
+						/*Mozila*/
+						$(this).css('-moz-animation-delay', $(this).attr("delay"));
+						/*Opera*/
+						$(this).css('-o-animation-delay', $(this).attr("delay"));
                         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
                         $(this).addClass(animationName).one(animationEnd, function() {
                             $(this).removeClass('animated ' + animationName)

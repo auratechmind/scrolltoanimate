@@ -13,10 +13,10 @@
 
 2. ADD scroll-animate.js in Footer
   
-3. First add Target Class (.target) in Main div OR Parent div.
+3. First add animate-box Class (.animate-box) in Main div OR Parent div.
    
     ```
-    <div class="target">
+    <div class="animate-box">
 		<div class="detail-section"> 
 		...
 		</div>
@@ -55,8 +55,6 @@
    ```
 
 Now, When Parent Div OR Main Div is visible on screen the element is Animated.
-
-
 
 ## Demo
 http://plugins.auratechmind.net/laravel-blog/public/
