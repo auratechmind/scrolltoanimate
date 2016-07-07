@@ -57,10 +57,10 @@
 Now, When Parent Div OR Main Div is visible on screen the element is Animated.
 
 ## Demo
-http://plugins.auratechmind.net/laravel-blog/public/
+http://plugins.auratechmind.net/scrolltoanimate
 
 ## Discussion
-http://auratechmind.net/question/category/laravel-blog/
+http://auratechmind.net/question/category/scrolltoanimate
 
 ## Credit
 https://daneden.github.io/animate.css/
